@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class PlayerController {
 
-private PlayerService playerService;
+    private PlayerService playerService;
 
     @GetMapping
     public List<Player> getPlayers() {

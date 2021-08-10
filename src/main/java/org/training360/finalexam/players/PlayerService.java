@@ -25,11 +25,11 @@ public class PlayerService {
                 command.getBirthDate(),
                 command.getPosition());
         playerRepository.save(player);
-        return modelMapper.map(player,PlayerDTO.class);
+        return modelMapper.map(player, PlayerDTO.class);
     }
 
 
     public void deletePlayerById(Long id) {
-     playerRepository.deleteById(id);
+        playerRepository.deleteById(id);
     }
 }

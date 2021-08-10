@@ -1,5 +1,6 @@
 package org.training360.finalexam.players;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -27,6 +28,7 @@ public class Player {
     private PositionType position;
 
     @ManyToOne
+    @JsonBackReference
     private Team team;
 
     public Player(String name, LocalDate birthDate, PositionType position) {

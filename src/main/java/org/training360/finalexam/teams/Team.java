@@ -34,5 +34,4 @@ public class Team {
         player.setTeam(this);
         players.add(player);
     }
-
 }
